@@ -1,6 +1,6 @@
 # Pokemon Database
 
-This is a Kotlin Android app that utilizes the PokeApi REST API.
+An Android app developed with Kotlin, powered by the PokeApi REST API.
 
-## Developing...
+## Under Development...
 

@@ -7,4 +7,9 @@
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="continue_as_guest">Continue as guest</string>
+    <string name="pikachu_image">Pikachu image</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_register_now">Don\'t have an account? Register now!</string>
+    <string name="forgot_password">Forgot password?</string>
 </resources>

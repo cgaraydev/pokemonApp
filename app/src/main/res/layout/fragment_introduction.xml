@@ -151,4 +151,13 @@
         android:textColor="@color/black"
         android:textAllCaps="true"/>
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/pikachu"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/pikachu_image"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

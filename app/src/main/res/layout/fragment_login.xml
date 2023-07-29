@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pikachu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/pikachu_image"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBodyLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pokemon_regular"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edittext_outline"
+            android:fontFamily="@font/pokemon_regular"
+            android:gravity="center"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="#6D000000"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/etPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edittext_outline"
+            android:fontFamily="@font/pokemon_regular"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#6D000000"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:fontFamily="@font/pokemon_regular"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnLoginLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FFCC00"
+            android:fontFamily="@font/pokemon_regular"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="#3F51B5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFooterLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutBodyLogin"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:paddingTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/ivPokeBall2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_poke_ball"
+            android:contentDescription="@string/pokeBall_icon"/>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginHorizontal="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutFooterLogin"
+        android:text="@string/don_t_have_an_account_register_now"
+        android:fontFamily="@font/pokemon_regular"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

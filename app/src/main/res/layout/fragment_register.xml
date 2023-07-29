@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/pikachu2"
+        android:src="@drawable/pikachu3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:contentDescription="@string/pikachu_image"/>
 
     <LinearLayout
-        android:id="@+id/linearLayoutBodyLogin"
+        android:id="@+id/linearLayoutBodyRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,17 +29,47 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/pokemon_regular"
-            android:text="@string/login"
+            android:text="@string/register"
             android:textColor="@color/black"
             android:textSize="36sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/etEmailLogin"
+            android:id="@+id/etFirstNameRegister"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="25dp"
+            android:background="@drawable/edittext_outline"
+            android:fontFamily="@font/pokemon_regular"
+            android:gravity="center"
+            android:hint="@string/first_name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#6D000000"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/etLastNameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edittext_outline"
+            android:fontFamily="@font/pokemon_regular"
+            android:gravity="center"
+            android:hint="@string/last_name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#6D000000"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/etEmailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="18dp"
             android:background="@drawable/edittext_outline"
             android:fontFamily="@font/pokemon_regular"
             android:gravity="center"
@@ -49,11 +80,11 @@
             android:importantForAutofill="no"/>
 
         <EditText
-            android:id="@+id/etPasswordLogin"
+            android:id="@+id/etPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:background="@drawable/edittext_outline"
             android:fontFamily="@font/pokemon_regular"
             android:gravity="center"
@@ -63,36 +94,28 @@
             android:textColorHint="#6D000000"
             android:importantForAutofill="no"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/forgot_password"
-            android:fontFamily="@font/pokemon_regular"
-            android:layout_gravity="end"
-            android:layout_marginTop="10dp"/>
-
         <Button
-            android:id="@+id/btnLoginLogin"
+            android:id="@+id/btnRegisterRegister"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
-            android:backgroundTint="#FFCC00"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="#3C5AA6"
             android:fontFamily="@font/pokemon_regular"
-            android:text="@string/login"
+            android:text="@string/register"
             android:textAllCaps="false"
-            android:textColor="#3F51B5" />
+            android:textColor="#FFD600" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayoutFooterLogin"
+        android:id="@+id/linearLayoutFooterRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayoutBodyLogin"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutBodyRegister"
         android:gravity="center"
         android:layout_marginTop="30dp">
 
@@ -123,8 +146,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayoutFooterLogin"
-        android:text="@string/don_t_have_an_account_register_now"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutFooterRegister"
+        android:text="@string/already_have_an_account_login_now"
         android:fontFamily="@font/pokemon_regular"
         android:textSize="14sp"
         android:layout_marginTop="15dp"

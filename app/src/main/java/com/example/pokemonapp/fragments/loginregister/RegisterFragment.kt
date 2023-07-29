@@ -10,9 +10,12 @@ import androidx.lifecycle.lifecycleScope
 import com.example.pokemonapp.data.User
 import com.example.pokemonapp.databinding.FragmentRegisterBinding
 import com.example.pokemonapp.viewmodel.RegisterViewModel
+import com.example.util.RegisterValidation
 import com.example.util.Resource
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 @AndroidEntryPoint
 class RegisterFragment : Fragment() {
@@ -56,6 +59,27 @@ class RegisterFragment : Fragment() {
 
                     }
                     else -> Unit
+                }
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.validation.collect { validation ->
+                if (validation.email is RegisterValidation.Failed) {
+                    withContext(Dispatchers.Main) {
+                        binding.etEmailRegister.apply {
+                            requestFocus()
+                            error = validation.email.message
+                        }
+                    }
+                }
+                if (validation.password is RegisterValidation.Failed) {
+                    withContext(Dispatchers.Main) {
+                        binding.etPasswordRegister.apply {
+                            requestFocus()
+                            error = validation.password.message
+                        }
+                    }
                 }
             }
         }

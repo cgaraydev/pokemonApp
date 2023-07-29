@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PokemonApp</string>
+    <string name="pokemon_logo">Pokemon logo</string>
+    <string name="pokemon_database">Pokemon Database</string>
+    <string name="pokeBall_icon">Pokeball icon</string>
+    <string name="welcome_to_the_pokemon_database_app">Welcome to the Pokemon Database App!</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="continue_as_guest">Continue as guest</string>
+</resources>

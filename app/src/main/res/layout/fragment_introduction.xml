@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivPokemonLogo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="15dp"
+        android:src="@drawable/pokemon_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/pokemon_logo"/>
+
+    <TextView
+        android:id="@+id/tvPokemonDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pokemon_database"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:fontFamily="@font/pokemon_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPokemonLogo"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPokemonDatabase"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:paddingTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/ivPokeBall1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_poke_ball"
+            android:contentDescription="@string/pokeBall_icon"/>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginHorizontal="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWelcomeIntroduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_the_pokemon_database_app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/pokemon_regular"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnLoginIntroduction"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFCC00"
+        android:fontFamily="@font/pokemon_regular"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeIntroduction" />
+
+    <Button
+        android:id="@+id/btnRegisterIntroduction"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#3C5AA6"
+        android:fontFamily="@font/pokemon_regular"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#FFD600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLoginIntroduction" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRegisterIntroduction"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:paddingTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/ivPokeBall2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_poke_ball"
+            android:contentDescription="@string/pokeBall_icon"/>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginHorizontal="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/continue_as_guest"
+        android:fontFamily="@font/pokemon_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textAllCaps="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@ android {
     namespace 'com.example.pokemonapp'
     compileSdk 33
 
-    buildFeatures{
+    buildFeatures {
         viewBinding true
     }
 
@@ -40,8 +40,7 @@ android {
 
 dependencies {
 
-    apply plugin :"kotlin-kapt"
-
+    apply plugin: "kotlin-kapt"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -53,6 +52,8 @@ dependencies {
 
     //Firebase
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.3'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.1.1'
+
 
     //Dagger hilt
     implementation "com.google.dagger:hilt-android:2.44"

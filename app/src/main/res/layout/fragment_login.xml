@@ -64,6 +64,7 @@
             android:importantForAutofill="no"/>
 
         <TextView
+            android:id="@+id/tvForgotPasswordLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/forgot_password"
@@ -119,6 +120,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tvRegisterAccountLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"

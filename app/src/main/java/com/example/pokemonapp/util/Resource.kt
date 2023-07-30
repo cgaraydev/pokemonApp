@@ -1,4 +1,4 @@
-package com.example.util
+package com.example.pokemonapp.util
 
 sealed class Resource<T>(
     val data: T? = null,

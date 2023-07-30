@@ -15,4 +15,8 @@
     <string name="already_have_an_account_login_now">Already have an account? Login now!</string>
     <string name="first_name">First name</string>
     <string name="last_name">Last name</string>
+    <string name="reset_password">Reset password</string>
+    <string name="please_enter_the_email_you_use_to_sign_in_to_pokemonapp">Please enter the email you use to sign in to PokemonApp</string>
+    <string name="send">Send</string>
+    <string name="cancel"><u>Cancel</u></string>
 </resources>

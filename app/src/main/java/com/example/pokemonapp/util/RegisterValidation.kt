@@ -1,4 +1,4 @@
-package com.example.util
+package com.example.pokemonapp.util
 
 sealed class RegisterValidation {
     object Success : RegisterValidation()

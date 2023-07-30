@@ -7,11 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
+import com.example.pokemonapp.R
 import com.example.pokemonapp.data.User
 import com.example.pokemonapp.databinding.FragmentRegisterBinding
 import com.example.pokemonapp.viewmodel.RegisterViewModel
-import com.example.util.RegisterValidation
-import com.example.util.Resource
+import com.example.pokemonapp.util.RegisterValidation
+import com.example.pokemonapp.util.Resource
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -44,6 +46,9 @@ class RegisterFragment : Fragment() {
                 )
                 val password = etPasswordRegister.text.toString()
                 viewModel.createAccount(user, password)
+            }
+            tvLoginAccountRegister.setOnClickListener {
+                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
             }
         }
         lifecycleScope.launch {

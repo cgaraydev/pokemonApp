@@ -2,9 +2,8 @@ package com.example.pokemonapp.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.example.pokemonapp.data.User
-import com.example.util.*
+import com.example.pokemonapp.util.*
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel

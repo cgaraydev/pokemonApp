@@ -1,5 +1,8 @@
 package com.example.pokemonapp.di
 
+import android.app.Application
+import android.content.Context.MODE_PRIVATE
+import android.content.SharedPreferences
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -20,4 +23,8 @@ object AppModule {
     @Provides
     @Singleton
     fun provideFirebaseFirestore() = Firebase.firestore
+
+    @Provides
+    fun provideIntroductionSharedPreferences(application: Application): SharedPreferences =
+        application.getSharedPreferences("IntroductionSharedPreferences", MODE_PRIVATE)
 }

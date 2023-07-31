@@ -139,6 +139,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tvContinueAsGuest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -152,9 +153,10 @@
         android:textAllCaps="true"/>
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContinueAsGuest"
         app:layout_constraintBottom_toBottomOf="parent"
         android:src="@drawable/pikachu"
         app:layout_constraintEnd_toEndOf="parent"

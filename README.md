@@ -1,28 +1,26 @@
-# Pokemon Database
+This App features:
 
-An Android app developed with Kotlin, powered by the PokeApi REST API.
+* Kotlin
+* XML
+* ViewBinding
+* MVVM
+* Dagger Hilt
+* Navigation Component
+* Fragments - Activities
+* Firebase Authentication
+* Firebase Firestore
+* Coroutines
+* Flow (SharedFlow)
+* Material Components (BottomSheetDialog)
 
-## Under Development...
-Update: Login is completed!
+Screens: Login, Register, Forgot Password
 
-## Some screenshots:
+Esta app consiste en un sistema de autenticación con diseño inspirado en Pokémon. Utiliza Firebase Authentication y Firestore para la gestión de usuarios, junto con MVVM, Hilt para inyección de dependencias y Coroutines + Flow (SharedFlow) para el manejo de estado.
+
+
 <div class="row">  
     <img src ="pokemonApp-introduction.jpg" width="200" height="400">   
     <img src ="pokemonApp-login.jpg" width="200" height="400">    
     <img src ="pokemonApp-register.jpg" width="200" height="400">
     <img src ="pokemonApp-forgotpassword.jpg" width="200" height="400">
 </div>
-
-## Login features
-<ul>
-  <li>FirebaseAuth and Firebase Firestore</li>
-  <li>MVVM</li>
-  <li>Dagger-Hilt</li>
-  <li>Navigation</li>
-  <li>Fragments, activities, dialogs</li>
-</ul>
-
-## Coming features
-Room, Retrofit, Datastore, User profile and settings, search fragment, and more!
-
-
